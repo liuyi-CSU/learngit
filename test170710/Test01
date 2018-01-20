@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+#使用python的walk方法
+import os
+L = []
+for fpathe, dirs, fs in os.walk('/Users/liuyi/Downloads'):
+    for f in fs:
+        L.append(f)
+for i in L:
+    print i
+
+#采用递归的方式实现
